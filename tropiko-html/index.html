@@ -139,18 +139,28 @@
               </ul>
             </p>
             <div>
-                <a href="https://api.whatsapp.com/send?phone=+6281311580288&text=Saya%20tertarik%20untuk%20membeli%20akun%20Disneyplus" class="custom_dark-btn">
-                  Buy Now
-                </a>
+              <a href="javascript:void(0)" class="custom_dark-btn" onclick="openWhatsApp()">
+                Buy Now
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
           <div class="product_img-box d-flex justify-content-center align-items-center">
-            <img src="img/disney.jpeg" alt="" class="" width="250px" />
+            <img src="img/disney.jpeg" alt="" class="" style="max-width: 100%;" />
           </div>
-        </div>
+        </div>        
       </div>
+      <script>
+        function openWhatsApp() {
+          var namaLengkap = prompt("Masukkan Nama Lengkap Anda:");
+          var orderan = prompt("Masukkan Orderan:");
+          var pembayaran = prompt("Masukkan Metode Pembayaran:");
+      
+          var urlWhatsApp = "https://api.whatsapp.com/send?phone=+6281311580288&text=Saya%20tertarik%20untuk%20membeli%20akun%20Disneyplus.%0A%0ANama%20Lengkap:%20" + encodeURIComponent(namaLengkap) + "%0AOrderan:%20" + encodeURIComponent(orderan) + "%0APembayaran%20via:%20" + encodeURIComponent(pembayaran);
+          window.open(urlWhatsApp);
+        }
+      </script>
       
       <div class="row layout_padding2">
         <div class="col-md-8">
@@ -173,18 +183,28 @@
               </ul>
             </p>
             <div>
-              <a href="https://api.whatsapp.com/send?phone=+6281311580288&text=Saya%20tertarik%20untuk%20membeli%20akun%20Netflix" class="custom_dark-btn">
+              <a href="javascript:void(0)" class="custom_dark-btn" onclick="openWhatsApp()">
                 Buy Now
               </a>
             </div>
           </div>
         </div>
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <div class="fruit_img-box d-flex justify-content-center ">
-            <img src="img/netflix.jpg" alt="" class="" width="100px" />
-          </div>
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
+          <div class="product_img-box d-flex justify-content-center align-items-center">
+            <img src="img/netflix.jpg" alt="" class="" style="max-width: 100%;" />
+          </div>        
         </div>
       </div>
+      <script>
+        function openWhatsApp() {
+          var namaLengkap = prompt("Masukkan Nama Lengkap Anda:");
+          var orderan = prompt("Masukkan Orderan:");
+          var pembayaran = prompt("Masukkan Metode Pembayaran:");
+      
+          var urlWhatsApp = "https://api.whatsapp.com/send?phone=+6281311580288&text=Saya%20tertarik%20untuk%20membeli%20akun%20Netflix.%0A%0ANama%20Lengkap:%20" + encodeURIComponent(namaLengkap) + "%0AOrderan:%20" + encodeURIComponent(orderan) + "%0APembayaran%20via:%20" + encodeURIComponent(pembayaran);
+          window.open(urlWhatsApp);
+        }
+      </script>
 
 
       <div class="row layout_padding2-top layout_padding-bottom">
@@ -207,11 +227,11 @@
           </div>
         </div>
         
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <div class="col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
           <div class="product_img-box d-flex justify-content-center align-items-center">
-            <img src="img/spotify.png" alt="" width="250px" />
+            <img src="img/spotify.png" alt="" class="" style="max-width: 100%;" />
           </div>
-        </div>
+        </div>        
       </div>
       
       <script>
